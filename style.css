@@ -80,7 +80,7 @@ html, body {
 }
 
 .background-image {
-  background-image: url('/portfolio/image/security.jpg');
+  background-image: url('/image/security.jpg');
   background-size: cover;
   background-position: center;
   height: 70vh;

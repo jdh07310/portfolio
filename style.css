@@ -1,0 +1,393 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden; /* 가로 스크롤 숨김 */
+  overflow-y: auto; /* 세로 스크롤 자동 표시 */
+}
+
+.title {
+  background-color: #424242;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.title h1 {
+  font-size: 35px;
+  font-weight: bold;
+  margin: 0;
+  margin-left: 20px;
+  color: white;
+}
+
+.menu-btn {
+  font-size: 50px;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding-right: 50px;
+}
+
+.menu-btn:hover {
+  background-color: #00bcd4;
+  color: white;
+  transform: scale(1.1);
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  background-color: white;
+  width: 300px;
+  height: 100%;
+  transition: right 0.3s ease;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+  font-size: 20px;
+}
+
+.sidebar.open {
+  right: 0;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+
+.sidebar ul li:last-child {
+  border-bottom: none;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.sidebar ul li a:hover {
+  color: black;
+}
+
+.background-image {
+  background-image: url('/portfolio/image/security.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 40px;
+  padding: 0;
+}
+
+.contact-info {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 30px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.contact-info .email,
+.contact-info .tel {
+  font-size: 16px;
+  color: black;
+  align-items: center;
+}
+
+.footer {
+  padding-top: 8px;
+  text-align: center;
+  position: relative;
+}
+
+.container-aboutme {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 0 15px;
+  flex-wrap: wrap; /* 화면 크기에 따라 아이템이 줄바꿈될 수 있도록 */
+}
+
+.left {
+  flex: 1;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-right: 1px solid gray;
+}
+
+.right{
+  flex: 1;
+  width: 45%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+.profile-img {
+  width: 350px;
+  height: auto;
+}
+
+.right p {
+  margin: 0;
+  padding: 0;
+  display: block;
+  font-size: 18px;
+}
+
+/* 팀 소개 페이지 */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.about-container {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  justify-content: center;
+  align-items: center;
+  gap: 130px;
+  flex-wrap: nowrap;
+}
+
+.about-box {
+  background-color: transparent;
+  padding: 20px;
+  border-radius: 24px;
+  box-shadow: none;
+  flex: 0 0 48%; /* ✅ 정확히 절반씩 차지 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-box h3 {
+  font-size: 22px;
+  margin: 12px 0 4px;
+  color: black;
+}
+
+.about-box p {
+  font-size: 16px;
+  color: black
+}
+
+.about-box img {
+  width: 100%;        /* 너비는 100%로 설정 */
+  height: 600px;      /* 높이는 고정 */
+  object-fit: contain; /* 이미지의 비율을 유지하면서 크기 조정 */
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+  transition: transform 0.3s ease;
+}
+
+.about-box img:hover {
+  transform: scale(1.05);
+}
+
+.left-box {
+  align-items: center;
+  text-align: center;
+}
+
+.left-box img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.right-box {
+  align-items: center;
+  text-align: center;
+}
+
+.right-box img {
+  width: 100%;
+  max-width: 400px;
+  height: 391.65px;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.secon-head {
+  text-align: center;
+  font-weight: bold;
+}
+
+.secon-pic {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.secon-pic img {
+  width: 500px; 
+  height: 300px;
+  border-radius: 8px;
+}
+
+.secon-text {
+  max-width: 1000px;
+  margin: 20px auto;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  color: #555;
+  text-align: justify;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.project-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 미디어 쿼리: 화면 크기에 따라 반응형 디자인 */
+@media screen and (max-width: 1200px) {
+  .title h1 {
+    font-size: 30px;
+  }
+
+  .menu-btn {
+    font-size: 40px;
+  }
+
+  .sidebar {
+    width: 250px;
+  }
+
+  .background-image {
+    font-size: 30px;
+  }
+
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .container-aboutme {
+    flex-direction: column;
+  }
+
+  .left, .right {
+    width: 100%;
+  }
+
+  .profile-img {
+    width: 70%;
+  }
+
+  .secon-pic {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .secon-pic img {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer img {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .title {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sidebar {
+    width: 100%;
+    right: 0;
+  }
+
+  .sidebar ul {
+    padding: 0;
+  }
+
+  .secon-head {
+    font-size: 24px;
+  }
+
+  .contact-info {
+    gap: 15px;
+  }
+
+  .footer img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .secon-pic img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .menu-btn {
+    font-size: 30px;
+    padding-right: 20px;
+  }
+
+  .title h1 {
+    font-size: 25px;
+  }
+
+  .background-image {
+    font-size: 24px;
+  }
+
+  .contact-info {
+    font-size: 14px;
+  }
+
+  .secon-head {
+    font-size: 20px;
+  }
+
+  .secon-pic img {
+    width: 90%;
+    height: auto;
+  }
+
+  .footer img {
+    width: 30px;
+    height: 30px;
+  }
+}

@@ -1,0 +1,97 @@
+<!-- aboutme.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Menu</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 상단 타이틀 및 버튼 -->
+  <div class="title">
+    <h1>PortFolio Menu</h1>
+    <div>
+      <button class="mode-toggle" id="mode-toggle">🌙</button>
+      <button class="menu-btn" id="menu-toggle">☰</button>
+    </div>
+  </div>
+
+  <!-- 사이드바 -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Main</a></li>
+      <li><a href="aboutme.html">About ME</a></li>
+      <li><a href="team.html">MY Team</a></li>
+      <li><a href="https://team-project-rouge-zeta.vercel.app" target="_blank" rel="noopener">Team Project</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="secon.html">SECON</a></li>
+    </ul>
+  </div>
+
+  <!-- 메인 콘텐츠 -->
+  <div class="container-aboutme">
+    <div class="left">
+      <img src="/image/my.jpg" alt="Profile" class="profile-img about-image" style="width: 350px;">
+    </div>
+    <div class="right">
+      <div class="info-card">
+        <h1>내 소개</h1>
+        <div class="info-section">
+          <h3>개인 정보</h3>
+          <p><strong>학과:</strong> 중부대학교 정보보호학과</p>
+          <p><strong>이름:</strong> 정동혁</p>
+          <p><strong>학번:</strong> 92113841</p>
+          <p><strong>취미:</strong> 독서, 영화 감상, 게임</p>
+          <p><strong>목표:</strong> 정보보호분야 전문가가 되어 기업의 보안을 강화하는 일을 하고 싶습니다.</p>
+        </div>
+        <div class="skill-section">
+          <h3>기술 스택</h3>
+          <div class="skill-item">
+            <span>HTML</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 90%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>CSS</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 85%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>JavaScript</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 75%;"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <span>Python</span>
+            <div class="skill-bar">
+              <div class="skill-progress" style="width: 60%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 연락처 정보 -->
+  <div class="contact-info">
+    <span class="email">wjdehdgur07@naver.com</span>
+    <span class="tel">Tel: 010-4516-5215</span>
+  </div>
+
+  <!-- 푸터 -->
+  <div class="footer">
+    <a href="https://github.com/jdh07310" target="_blank" rel="noopener">
+      <img src="/image/github.jpg" alt="GitHub" style="height: 50px; width: 50px;">
+    </a>
+    <a href="https://www.instagram.com/ddonghyukve__/" target="_blank" rel="noopener">
+      <img src="/image/instagram.png" alt="Instagram" style="height: 50px; width: 50px;">
+    </a>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

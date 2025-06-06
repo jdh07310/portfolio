@@ -1,0 +1,54 @@
+<!-- secon.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Menu</title>
+  <!-- 스타일시트 연결: 다크 모드와 반응형 디자인 지원 -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- 상단 타이틀 및 버튼: 다크 모드 토글과 메뉴 버튼 포함 -->
+  <div class="title">
+    <h1>PortFolio Menu</h1>
+    <div>
+      <button class="mode-toggle" id="mode-toggle">🌙</button>
+      <button class="menu-btn" id="menu-toggle">☰</button>
+    </div>
+  </div>
+
+  <!-- 사이드바: 네비게이션 메뉴, 기본적으로 숨김 상태 -->
+  <div class="sidebar" id="sidebar">
+    <ul>
+      <li><a href="index.html">Main</a></li>
+      <li><a href="aboutme.html">About ME</a></li>
+      <li><a href="team.html">MY Team</a></li>
+      <li><a href="https://team-project-rouge-zeta.vercel.app" target="_blank" rel="noopener">Team Project</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="secon.html">SECON</a></li>
+    </ul>
+  </div>
+
+  <!-- SECON 헤더: 이벤트 제목 -->
+  <div class="secon-head">
+    <h1>SECON 2025</h1>
+  </div>
+
+  <!-- SECON 이미지: 관련 사진 표시 -->
+  <div class="secon-pic">
+    <img src="/image/secon1.jpg" alt="SECON Image 1">
+    <img src="/image/secon2.jpg" alt="SECON Image 2">
+  </div>
+
+  <!-- SECON 텍스트: 참여 후기 및 경험 -->
+  <div class="secon-text">
+    <p>SECON & eGISEC 2025에 참여하며 최신 보안 기술과 트렌드를 직접 체험할 수 있는 기회였습니다. 특히 AI 기반 보안 시스템과 스마트 시티 보안 솔루션에 대해 깊이 있는 정보를 얻을 수 있었고, 다양한 보안 기업들의 혁신적인 제품을 접할 수 있었습니다.</p>
+    <p>세미나와 워크숍을 통해 AI를 활용한 위험 탐지 시스템과 최신 보안 트렌드에 대해 배웠습니다. 향후 제 연구와 업무에 어떻게 적용할 수 있을지에 대한 방향성을 잡을 수 있었고, 네트워킹을 통해 보안 전문가들과 아이디어를 교환하는 기회도 가졌습니다.</p>
+    <p>하지만 몇몇 세미나의 시간 배정이 부족해 아쉬운 점도 있었고, 일부 부스가 너무 혼잡해서 제대로 참여하지 못한 부분이 있었습니다. 앞으로의 개선을 기대하며, 향후 연구 및 실무에 많은 도움이 될 것으로 기대됩니다。</p>
+  </div>
+
+  <!-- 자바스크립트 연결: 사이드바 토글과 다크 모드 기능 -->
+  <script src="main.js"></script>
+</body>
+</html>

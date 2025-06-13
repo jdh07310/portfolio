@@ -70,13 +70,6 @@ body.dark-mode .title {
   top: 50%;
   transform: translateY(-50%);
 }
-
-/* 버튼 호버 효과 제거 */
-.mode-toggle:hover,
-.menu-btn:hover {
-  /* transform: scale(1.1); */
-}
-
 /* 사이드바 스타일 */
 .sidebar {
   position: fixed;
